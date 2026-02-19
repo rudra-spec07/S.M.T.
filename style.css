@@ -9,6 +9,54 @@ body {
     padding: 20px;
 }
 
+/* container sizing responsive */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ensure form rows wrap on small screens */
+.form-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* filters wrap and center on narrow viewports */
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* adjust task cards and other elements on mobile */
+@media (max-width: 600px) {
+    .task-form {
+        padding: 15px;
+    }
+
+    .task-form input,
+    .task-form textarea,
+    .task-form select {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .filters button {
+        flex: 1 1 100%;
+    }
+}
+
 .container {
     max-width: 900px;
     margin: auto;
