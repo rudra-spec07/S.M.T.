@@ -39,6 +39,11 @@ header {
     display: flex;
     gap: 10px;
 }
+#priority:hover {
+    
+    color: solid black;
+
+}
 
 button {
     padding: 10px;
@@ -46,16 +51,23 @@ button {
     cursor: pointer;
     border-radius: 5px;
     transition: background 0.3s ease;
+    
 }
 
-/* hover effect for all buttons */
+
 button:hover {
-    filter: brightness(0.9);
+    filter: brightness(0.5);
+    color: black;
+    
 }
 
 #addTaskBtn {
     background: #4CAF50;
     color: white;
+}
+#addTaskBtn:hover {
+    filter: brightness(0.8);
+    color: black;
 }
 
 .filters {
@@ -94,11 +106,17 @@ button:hover {
     border-radius: 4px;
     color: white;
     font-size: 12px;
+    transition: background 0.2s ease;
 }
 
 .high { background: #e74c3c; }
 .medium { background: #f39c12; }
 .low { background: #2ecc71; }
+
+/* Hover colors for priority badges (user-selected) */
+.high:hover { color: #e74c3c; }
+.medium:hover { color: #f39c12; }
+.low:hover { color: #27ae60; }
 
 .actions {
     margin-top: 10px;
@@ -113,4 +131,10 @@ button:hover {
 .error {
     color: red;
     font-size: 14px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f6a299;
+    margin: 0;
+    padding: 20px;
 }
